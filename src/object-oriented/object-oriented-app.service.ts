@@ -13,7 +13,9 @@ export class ObjectOrientedAppService {
 
     robot.saveStep(Instruction.NOP);
 
-    instructions.split("").forEach((instruction) => {
+    const instructionList = instructions.split("");
+
+    instructionList.forEach((instruction) => {
       robot.handleInstruction(instruction);
     });
 
